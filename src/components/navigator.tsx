@@ -144,14 +144,11 @@ function SideBar({ visible }) {
             <SideBarTabItem name="index" icon={makeIcon("home")}>
               Home
             </SideBarTabItem>
-            <SideBarTabItem name="explore" icon={makeIcon("explore")}>
-              Explore
+            <SideBarTabItem name="explore" icon={makeIcon("list-ul")}>
+              List
             </SideBarTabItem>
-            {/* Divider */}
-          </View>
-          <View>
-            <SideBarTabItem name="/more" icon={makeIcon("more")}>
-              More
+            <SideBarTabItem name="/more" icon={makeIcon("dashboard")}>
+              Dashboard
             </SideBarTabItem>
           </View>
         </View>
@@ -178,8 +175,8 @@ function TabBar({ visible }) {
       <View style={jsStyles.nav}>
         {[
           { name: "index", id: "index", icon: "home" },
-          { name: "explore", id: "explore", icon: "explore" },
-          { name: "/more", id: "more", icon: "more" },
+          { name: "explore", id: "explore", icon: "list-ul" },
+          { name: "/more", id: "more", icon: "dashboard" },
         ].map((tab, i) => (
           <TabBarItem key={i} name={tab.name} id={tab.id}>
             {({ focused, pressed, hovered }) => (
